@@ -1,8 +1,8 @@
 const fs = require('fs');
-const { circle } = require('./lib/shapes');
+const { circle, rectangle, triangle } = require('./lib/shapes');
 
 const filename = `circle.svg`;
 
-fs.writeFile(filename, circle, (err) =>
+fs.writeFile(filename, triangle, (err) =>
     err ? console.log(err) : console.log('Success!')
 );
